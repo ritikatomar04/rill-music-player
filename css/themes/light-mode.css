@@ -1,0 +1,183 @@
+:root {
+    --whitetype: #ff7480;
+    --blacktype: #9f6ea3;
+    --lightblack: #5356ff;
+    --white: #dff5ff;
+    --darkwhite: #cecaca;
+    --pinkshadow: #ffcbdd;
+    --lightbshadow: rgba(0, 0, 0, 0.364);
+    --lightgreen: #67c6e3;
+    --loader: #5356ff;
+}
+
+body {
+    background: url(../assets/light.gif) center center fixed;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.wrapper {
+    background: var(--white);
+    box-shadow: 0px 1px 15px black;
+}
+.main #logo {
+    color: var(--lightblack);
+}
+.top-bar i {
+    font-size: 30px;
+    color: var(--lightblack);
+}
+
+.top-bar span {
+    color: var(--lightblack);
+}
+
+.img-area {
+    -moz-box-shadow: 0px 6px 12px var(--lightbshadow);
+    -webkit-box-shadow: 0px 6px 12px var(--lightbshadow);
+    box-shadow: 0px 6px 12px var(--lightbshadow);
+}
+
+.song-details > p {
+    color: var(--lightblack);
+}
+
+.progress-area {
+    background: var(--lightgreen);
+}
+
+.progress-area .progress-bar {
+    background: var(--lightblack);
+}
+
+.song-timer span {
+    color: var(--lightblack);
+}
+
+volume {
+    color: rgb(207, 123, 123);
+}
+
+.volume i {
+    background: #c5a4a4;
+}
+
+.volume i:hover {
+    background: rgba(196, 73, 73, 0.1);
+}
+
+.volume #volume_show {
+    padding: 8px 12px;
+    margin: 0 5px 0 0;
+}
+
+.volume input {
+    background: var(--lightblack);
+}
+
+input[type="range"]::-webkit-progress-value {
+    background-color: #31369f;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background: var(--lightgreen);
+    border: 3px solid var(--lightblack);
+}
+
+.controls i {
+    background: var(--lightblack);
+}
+
+.controls .play-pause {
+    background: var(--lightblack);
+    box-shadow: 0px 0px 5px var(--lightgreen);
+}
+
+.play-pause::before {
+    background: var(--lightgreen);
+}
+
+.music-list {
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+    background: var(--white);
+}
+
+.header .row {
+    color: var(--lightblack);
+}
+
+.header #close {
+    color: var(--lightblack);
+}
+
+.music-list ul li {
+    color: var(--lightblack);
+    border-bottom: 1px solid var(--lightblack);
+}
+
+.loader .stroke {
+    background: var(--loader);
+}
+
+@keyframes animate {
+    30% {
+        background: #79397d;
+    }
+
+    50% {
+        background: #93438b;
+    }
+
+    100% {
+        background: #87267a;
+    }
+}
+
+#time {
+    text-shadow: 2px 2px 1px black;
+    color: #ffffff;
+}
+#date {
+    text-shadow: 2px 2px 1px black;
+    color: #ffffff;
+}
+
+.bi-badge-tm-fill:hover {
+    fill: red;
+    cursor: pointer;
+}
+.bi-mic-fill:hover {
+    fill: red;
+    cursor: pointer;
+}
+.bi-mic-fill {
+    fill: var(--lightblack);
+}
+.bi-badge-tm-fill {
+    fill: var(--lightblack);
+}
+.bi-volume-up-fill {
+    fill: var(--lightblack);
+}
+#volume_show {
+    color: var(--lightblack);
+}
+.bi-volume-up-fill:hover {
+    fill: red;
+}
+#author {
+    text-shadow: 2px 2px 1px black;
+    color: #ffffff;
+}
+#title-name {
+    text-shadow: 2px 2px 1px black;
+    color: #ffffff;
+}
+#quote {
+    text-shadow: 2px 2px 1px black;
+    color: #ffffff;
+}
+#user {
+    text-shadow: 2px 2px 1px black;
+    color: #ffffff;
+}

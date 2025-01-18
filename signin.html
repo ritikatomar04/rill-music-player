@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Advanced Music Player | User</title>
+		<link rel="stylesheet" href="./css/signin.css">
+		<link rel="shortcut icon" href="./css/assets/favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+		<div class="wrapper">
+			<form id="user-form">
+				<h2>User Details</h2>
+				<div class="input-field">
+					<input type="text" id="name" required autofocus>
+					<label>Enter your Name</label>
+				</div>
+				<a id="a-btn-musicplayer" href="#">Enter Music Player</a>
+				<div class="register">
+					<p>Want to know more? <a target="_blank" href="https://github.com/ritikatomar04">Visit Github</a>
+					</p>
+				</div>
+			</form>
+		</div>
+		<script>
+			document.getElementById('name').addEventListener('keypress', function(event) {
+				if (event.key === 'Enter') {
+					event.preventDefault();
+					var name = document.getElementById('name').value;
+					if (name === '') {
+						alert('Please enter your name!');
+					} else {
+						localStorage.setItem('userName', name);
+						document.getElementById('a-btn-musicplayer').click();
+					}
+				}
+			});
+
+			document.getElementById('a-btn-musicplayer').addEventListener('click', function(event) {
+				event.preventDefault();
+				var name = document.getElementById('name').value;
+				if (name === '') {
+					alert('Please enter your name!');
+				} else {
+					localStorage.setItem('userName', name);
+					window.location.href = "./music-player.html";
+				}
+			});
+		</script>
+	</body>
+</html>
